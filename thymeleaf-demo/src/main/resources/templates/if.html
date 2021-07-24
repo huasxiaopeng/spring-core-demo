@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title>Thymeleaf if </title>
+
+  <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <h1>Thymeleaf if</h1>
+    <h4 th:utext="${user.userName}"></h4>
+    <div th:switch="${user.role}">
+      <p th:case="ADMIN">拥有admin 权限</p>
+<!--      默认结果-->
+      <p th:case="*">没有任何权限</p>
+    </div>
+  </div>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>数组的遍历</title>
+</head>
+
+<body>
+<p>
+  数组的长度为： <span th:text="${planets.length}"></span>
+</p>
+
+<!-- 普通方式去遍历 -->
+<ol>
+  <li th:text="${planets[0]}"></li>
+  <li th:text="${planets[1]}"></li>
+  <li th:text="${planets[2]}"></li>
+  <li th:text="${planets[3]}"></li>
+  <li th:text="${planets[4]}"></li>
+  <li th:text="${planets[5]}"></li>
+  <li th:text="${planets[6]}"></li>
+</ol>
+
+<!-- 循环方式去遍历 -->
+ <ul th:each="pland:${planets}">
+   <li th:text="${pland}"></li>
+
+ </ul>
+</body>
+
+</html>
