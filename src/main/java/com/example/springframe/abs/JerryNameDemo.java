@@ -1,11 +1,11 @@
-package com.example.springframe;
+package com.example.springframe.abs;
 
 /**
  * @Description TODO
  * @Author lktbz
  * @Date 2021/07/25
  */
-public class JerryNameDemo extends NameAbstractDemo{
+public class JerryNameDemo extends NameAbstractDemo {
     private String name;
 
     public JerryNameDemo(String name) {

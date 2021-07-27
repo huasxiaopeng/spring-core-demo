@@ -20,7 +20,22 @@ srs:
     -192.168.5.161
     -192.168.5.162
 
-server:
-    address: 192.168.1.100
+
+#spring profile 使用例子
+
+se :
+  address: 192.165.5.160
+---
+spring:
+  profiles: dev
+  server:
+      address: 127.0.0.1
+---
+spring:
+  profiles: test
+  server:
+    address: 192.168.5.160
+
+#表示上面的profile 会根据选择动态的调整使用哪个配置
 
 

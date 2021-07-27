@@ -2,11 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.lktbz</groupId>
-    <artifactId>spring-framework-demo</artifactId>
-    <packaging>pom</packaging>
+    <groupId>com.aop</groupId>
+    <artifactId>spring-aop-full-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-framework-demo</name>
+    <name>spring-aop-full-demo</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -25,6 +24,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -67,7 +67,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.springframe.SpringFrameworkDemoApplication</mainClass>
+                    <mainClass>com.aop.spring.SpringAopFullDemoApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
